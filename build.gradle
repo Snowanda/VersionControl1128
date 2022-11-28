@@ -1,9 +1,16 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.github.Snowanda'
 version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+application {
+    mainClassName 'com.github.Snowanda.Main'
+}
 
 repositories {
     mavenCentral()
